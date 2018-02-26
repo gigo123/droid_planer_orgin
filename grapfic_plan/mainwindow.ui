@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>420</width>
+    <height>397</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>420</width>
+    <height>357</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Модуль планування </string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,0">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QPushButton" name="start_Point_buton">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>додавання точок</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="select_buton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>переміщеня</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetMaximumSize</enum>
+      </property>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>420</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="figures">
+    <property name="title">
+     <string>Маневри</string>
+    </property>
+    <addaction name="action_Line"/>
+    <addaction name="action_Cirle"/>
+    <addaction name="action_Box_line"/>
+    <addaction name="action_Baterfly"/>
+    <addaction name="action_Endless"/>
+    <addaction name="action_Snake"/>
+    <addaction name="action_Region_line"/>
+   </widget>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="action_open_File"/>
+    <addaction name="action_save_file"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>маршрут</string>
+    </property>
+    <addaction name="action_Route"/>
+    <addaction name="action_Add_startPoint"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Про програму</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="figures"/>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_Cirle">
+   <property name="text">
+    <string>круг</string>
+   </property>
+  </action>
+  <action name="action_open_File">
+   <property name="text">
+    <string>Відкрити  з файлу</string>
+   </property>
+  </action>
+  <action name="action_Line">
+   <property name="text">
+    <string>Відрізок</string>
+   </property>
+  </action>
+  <action name="action_Box_line">
+   <property name="text">
+    <string>Замкнута траекторія</string>
+   </property>
+  </action>
+  <action name="action_Baterfly">
+   <property name="text">
+    <string>метелик</string>
+   </property>
+  </action>
+  <action name="action_Endless">
+   <property name="text">
+    <string>вісімка</string>
+   </property>
+  </action>
+  <action name="action_Snake">
+   <property name="text">
+    <string>змійка</string>
+   </property>
+  </action>
+  <action name="action_Region_line">
+   <property name="text">
+    <string>область</string>
+   </property>
+  </action>
+  <action name="action_Route">
+   <property name="text">
+    <string>параметри</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>маневри</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>точки</string>
+   </property>
+  </action>
+  <action name="action_Add_startPoint">
+   <property name="text">
+    <string>додати точку старту</string>
+   </property>
+  </action>
+  <action name="action_save_file">
+   <property name="text">
+    <string>Зберегти у файл</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
